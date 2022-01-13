@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: bi-web-deployment
-  namespace: boldbi-migration-test
+  namespace: bold-migration-test
 spec:
   selector:
     matchLabels:
