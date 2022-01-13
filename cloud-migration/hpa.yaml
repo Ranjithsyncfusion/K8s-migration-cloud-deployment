@@ -2,7 +2,7 @@ apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
   name: bi-web-hpa
-  namespace: boldbi-cloud-test
+  namespace: bold-migration-test
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
@@ -38,7 +38,7 @@ apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
   name: bi-api-hpa
-  namespace: boldbi-cloud-test
+  namespace: bold-migration-test
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
@@ -74,7 +74,7 @@ apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
   name: bi-dataservice-hpa
-  namespace: boldbi-cloud-test
+  namespace: bold-migration-test
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
@@ -110,7 +110,7 @@ apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
   name: bi-dataservice-refresh-hpa
-  namespace: boldbi-cloud-test
+  namespace: bold-migration-test
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
